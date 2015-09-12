@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin">
+
+    <RelativeLayout
+        style="@style/Widget.CardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/carImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_toRightOf="@+id/carImage"
+            android:text="Title "
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#009688"
+            />
+
+
+        <TextView
+            android:id="@+id/carRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="@dimen/cardInViews"
+            android:layout_toRightOf="@+id/carImage"
+            android:text="1300 per hour"
+            android:textColor="#607D8B" />
+
+        <ImageView
+            android:id="@+id/smallSeatIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/carRate"
+            android:layout_margin="@dimen/cardInViews"
+            android:layout_toRightOf="@+id/carImage"
+            android:src="@drawable/chair" />
+
+        <TextView
+            android:id="@+id/carSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/smallSeatIcon"
+            android:layout_alignTop="@+id/smallSeatIcon"
+            android:layout_toEndOf="@+id/smallSeatIcon"
+            android:layout_toRightOf="@+id/smallSeatIcon"
+            android:text="Seater : 3+1"
+            android:textColor="#607D8B" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView><!--
+
+ <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/carRating"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/carImage"
+            android:numStars="5" />
+
+
+<View
+android:layout_width="1dp"
+android:layout_height="wrap_content"
+android:background="#000"
+android:id="@+id/seperator"
+android:layout_toRightOf="@+id/carRate"
+android:layout_alignTop="@+id/carRate"
+android:layout_alignBottom="@+id/carRate"
+android:layout_marginLeft="5dp"/>
+
+       -->
